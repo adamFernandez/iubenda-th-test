@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Iubenda Cookie Solution Configurator</title>
+</head>
+
+<body>
+  <Wrapper>
+    <header>
+      <div class="account-info">
+        <div class="screen-button">
+          Screen shaded
+        </div>
+        <div class="domain">
+          <div class="link">
+            www.domain.com
+          </div>
+          <div class="info">
+            Account & Billing info
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div class="form-message">
+          <div class="icon">
+            success or error
+          </div>
+          <div class="message">
+            Your website has been created and your legal documents have been generated...
+          </div>
+          <div class="close">
+            X
+          </div>
+        </div>
+
+        <div class="switch-section">
+
+          <label class="switch-label">
+            <div class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </div>
+            Add a cookie banner
+          </label>
+
+          <h4>Position</h4>
+          <div class="container">
+            <select name="position" id="position">
+              <option value="top"></option>
+              <option value="bottom"></option>
+              <option value="left"></option>
+              <option value="right"></option>
+            </select>
+          </div>
+
+          <h4>Theme</h4>
+          <div class="container">
+            <div class="theme-item">
+              <img src="./images/fake_banner_dark.png" alt="darker theme option">
+              <span>Dark</span>
+            </div>
+            <div class="theme-item">
+              <img src="./images/fake_banner_light.png" alt="lighter theme option">
+              <span>Light</span>
+            </div>
+            <div class="add-theme-item">
+              <div class="add-button">+</div>
+              <span>Custom style</span>
+            </div>
+          </div>
+
+          <h4>Legislation</h4>
+          <div class="container">
+            <div class="gdpr">GDPR Only</div>
+            <div class="ccpa">CCPA Only</div>
+            <div class="both">Both</div>
+          </div>
+
+          <h4>Require consent from</h4>
+          <div class="container">
+            <div class="item item-selected">
+              <img src="./images/icon_ue_flag.svg" alt="European Union flag next to the european union option">
+              <span>EU Only</span>
+            </div>
+            <div class="item">
+              <img src="./images/icon_world.svg" alt="European Union flag next to the european union option">
+              <span>World Wide</span>
+            </div>
+          </div>
+
+          <h4>Banner Buttons</h4>
+          <div class="container">
+            <label>
+              <input type="checkbox">
+              Explicit Accept and Customize Buttons
+            </label>
+            <label>
+              <input type="checkbox">
+              Explicit Reject button
+            </label>
+          </div>
+
+          <h4>Other options</h4>
+          <div class="container">
+            <label>
+              <input type="checkbox">
+              Enable IAB Transparency and Consent Framework <span>- Learn more</span>
+            </label>
+            <div class="warning-message">
+              <div class="warning-icon">!</div>
+              <div class="warning-message"></div>
+            </div>
+            <label>
+              <input type="checkbox">
+              Enable Google AMP support <span class="help">? symbol</span>
+            </label>
+            <label>
+              <input type="checkbox">
+              Automatically block scripts detected by the plugin <span class="help">? symbol</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="switch-section">
+          <label class="switch-label">
+            <div class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </div>
+            Add the privacy policy button
+          </label>
+
+          <h4>Button style</h4>
+          <div class="container">
+            <label class="light"><img src="./images/fake_button_light.png"
+                alt="Detail for the light button appearance">Light</label>
+            <label class="dark"><img src="./images/fake_button_dark.png"
+                alt="Detail for the dark button appearance">Dark</label>
+          </div>
+
+          <h4>Button position</h4>
+          <div class="container">
+            <label>
+              <input type="radio" name="button_position" value="automatic">
+              Put automatically button on footer
+            </label>
+            <label>
+              <input type="radio" name="button_position" value="manual">
+              Integrate button manually
+            </label>
+          </div>
+        </div>
+
+      </form>
+    </main>
+
+    <footer>
+      <div class="reset">Reset settings</div>
+      <button>Integrate</button>
+    </footer>
+
+  </wrapper>
+</body>
+
+</html>
