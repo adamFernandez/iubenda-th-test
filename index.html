@@ -10,27 +10,30 @@
 </head>
 
 <body>
-  <Wrapper>
+  <div class="wrapper">
     <header>
-      <div class="account-info">
+      <div class="domain-info">
         <div class="screen-button">
-          Screen shaded
+          Screen
         </div>
         <div class="domain">
-          <div class="link">
+          <a href="#">
             www.domain.com
-          </div>
+          </a>
           <div class="info">
             Account & Billing info
           </div>
         </div>
       </div>
+      <div class="compliance-rating">
+        23%
+      </div>
     </header>
     <main>
       <form>
         <div class="form-message">
-          <div class="icon">
-            success or error
+          <div class="icon success">
+            <svg height="30" viewBox="0 0 48 48" width="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#1CC691" transform="translate(2 2)"><circle cx="22" cy="22" r="22"/><path d="m11.3829457 21.6774194 7.3720626 7.3225806 14.0946041-14"/></g></svg>
           </div>
           <div class="message">
             Your website has been created and your legal documents have been generated...
@@ -41,62 +44,70 @@
         </div>
 
         <div class="switch-section">
+            <label class="switch-label">
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+              Add a cookie banner
+            </label>
 
-          <label class="switch-label">
-            <div class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
+          <div class="join">
+            
+            <div class="container-joined">
+              <h4>Position</h4>
+              <div class="container">
+                <select name="position" id="position">
+                  <option value="top">Top</option>
+                  <option value="bottom">Bottom</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
+                </select>
+              </div>
             </div>
-            Add a cookie banner
-          </label>
 
-          <h4>Position</h4>
-          <div class="container">
-            <select name="position" id="position">
-              <option value="top"></option>
-              <option value="bottom"></option>
-              <option value="left"></option>
-              <option value="right"></option>
-            </select>
-          </div>
+            <div class="container-joined">
+              <h4>Theme</h4>
+              <div class="container flex">
+                <div class="theme-item">
+                  <div class="dark selected"></div>
+                  <span>Dark</span>
+                </div>
+                <div class="theme-item">
+                  <div class="light unselected"></div>
+                  <span>Light</span>
+                </div>
+                <div class="theme-item">
+                  <div class="add-button unselected">+</div>
+                  <span>Custom style</span>
+                </div>
+              </div>
 
-          <h4>Theme</h4>
-          <div class="container">
-            <div class="theme-item">
-              <img src="./images/fake_banner_dark.png" alt="darker theme option">
-              <span>Dark</span>
             </div>
-            <div class="theme-item">
-              <img src="./images/fake_banner_light.png" alt="lighter theme option">
-              <span>Light</span>
-            </div>
-            <div class="add-theme-item">
-              <div class="add-button">+</div>
-              <span>Custom style</span>
-            </div>
+  
           </div>
 
           <h4>Legislation</h4>
-          <div class="container">
-            <div class="gdpr">GDPR Only</div>
-            <div class="ccpa">CCPA Only</div>
-            <div class="both">Both</div>
+          <div class="container flex">
+            <div class="legislation-item selected">GDPR Only</div>
+            <div class="legislation-item ccpa unselected">CCPA Only</div>
+            <div class="legislation-item both unselected">Both</div>
           </div>
 
           <h4>Require consent from</h4>
-          <div class="container">
-            <div class="item item-selected">
-              <img src="./images/icon_ue_flag.svg" alt="European Union flag next to the european union option">
+          <div class="container flex">
+            <div class="consent-item selected">
+              <svg height="19" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(1 3)"><g fill="#1CC691"><path d="m4.5 4.5h25.5v18h-25.5z" fill-opacity=".05"/><path d="m13.5 6c.4142136 0 .75-.33578644.75-.75s-.3357864-.75-.75-.75-.75.33578644-.75.75.3357864.75.75.75z"/><path d="m13.5 16.5c.4142136 0 .75-.3357864.75-.75s-.3357864-.75-.75-.75-.75.3357864-.75.75.3357864.75.75.75z"/><path d="m18.75 11.25c.4142136 0 .75-.3357864.75-.75s-.3357864-.75-.75-.75-.75.3357864-.75.75.3357864.75.75.75z" transform="matrix(0 1 -1 0 29.25 -8.25)"/><path d="m8.25 11.25c.41421356 0 .75-.3357864.75-.75s-.33578644-.75-.75-.75-.75.3357864-.75.75.33578644.75.75.75z" transform="matrix(0 1 -1 0 18.75 2.25)"/><path d="m17.2123106 14.9623106c.4142136 0 .75-.3357864.75-.75s-.3357864-.75-.75-.75-.75.3357864-.75.75.3357864.75.75.75z" transform="matrix(-.70710678 .70710678 -.70710678 -.70710678 39.432874 12.090991)"/><path d="m9.7876894 7.5376894c.4142136 0 .75-.33578644.75-.75s-.3357864-.75-.75-.75c-.41421356 0-.75.33578644-.75.75s.33578644.75.75.75z" transform="matrix(-.70710678 .70710678 -.70710678 -.70710678 21.508251 4.666369)"/><path d="m9.7876894 14.9623106c.4142136 0 .75-.3357864.75-.75s-.3357864-.75-.75-.75c-.41421356 0-.75.3357864-.75.75s.33578644.75.75.75z" transform="matrix(-.70710678 -.70710678 .70710678 -.70710678 6.659009 31.182874)"/><path d="m17.2123106 7.5376894c.4142136 0 .75-.33578644.75-.75s-.3357864-.75-.75-.75-.75.33578644-.75.75.3357864.75.75.75z" transform="matrix(-.70710678 -.70710678 .70710678 -.70710678 24.583632 23.758252)"/></g><path d="m.75 1.5h25.3906929v18h-25.3906929z" stroke="#1CC691" stroke-linecap="round" stroke-linejoin="round"/><path d="m.75 0v26.027153" fill="#d8d8d8" stroke="#1CC691" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
               <span>EU Only</span>
             </div>
-            <div class="item">
-              <img src="./images/icon_world.svg" alt="European Union flag next to the european union option">
+            <div class="consent-item unselected">
+              <svg height="19" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(1 2)"><circle cx="18" cy="14.368421" fill="#000" fill-opacity=".05" r="13"/><g stroke="#000"><circle cx="13" cy="13.368421" r="13"/><path d="m17.5454545 4.36842105h-3.4090909l-2.0454545 1.71428572v1.14285714h-2.0454546l-2.0454545 1.14285714v1.14285715h3.4090909l.6818182.5714286h1.3636364l1.3636363 1.1428571h2.7272727l1.3636364 1.1428572 1.3636364-1.1428572h2.7272727"/><path d="m15.5 15.2434211h-1.25l-1.875-1.875h-2.5l-1.875 1.875 1.25 3.125h1.875l1.25 1.25v3.125l.625.625h1.25l1.875-1.875v-1.875l1.875-1.875z"/></g></g></svg>
               <span>World Wide</span>
             </div>
           </div>
 
           <h4>Banner Buttons</h4>
-          <div class="container">
+          <div class="checkbox container">
             <label>
               <input type="checkbox">
               Explicit Accept and Customize Buttons
@@ -108,14 +119,14 @@
           </div>
 
           <h4>Other options</h4>
-          <div class="container">
+          <div class="checkbox container">
             <label>
               <input type="checkbox">
               Enable IAB Transparency and Consent Framework <span>- Learn more</span>
             </label>
-            <div class="warning-message">
+            <div class="warning-group">
               <div class="warning-icon">!</div>
-              <div class="warning-message"></div>
+              <span class="warning-message">You may should activate this feature if you show ads on your website</span>
             </div>
             <label>
               <input type="checkbox">
@@ -138,15 +149,19 @@
           </label>
 
           <h4>Button style</h4>
-          <div class="container">
-            <label class="light"><img src="./images/fake_button_light.png"
-                alt="Detail for the light button appearance">Light</label>
-            <label class="dark"><img src="./images/fake_button_dark.png"
-                alt="Detail for the dark button appearance">Dark</label>
+          <div class="container flex">
+            <div class="button-style-item">
+              <div class="dark selected"></div>
+              <span>Dark</span>
+            </div>
+            <div class="button-style-item">
+              <div class="light unselected"></div>
+              <span>Light</span>
+            </div>
           </div>
 
           <h4>Button position</h4>
-          <div class="container">
+          <div class="container flex">
             <label>
               <input type="radio" name="button_position" value="automatic">
               Put automatically button on footer
@@ -166,7 +181,7 @@
       <button>Integrate</button>
     </footer>
 
-  </wrapper>
+  </div>
 </body>
 
 </html>
