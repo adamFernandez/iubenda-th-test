@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/rating.css">
   <title>Iubenda Cookie Solution Configurator</title>
 </head>
 
 <body>
+  <div class="iubenda-logo"></div>
   <div class="wrapper">
     <header>
       <div class="domain-info">
@@ -26,7 +28,14 @@
         </div>
       </div>
       <div class="compliance-rating">
-        23%
+        <div class="message">Your current compliance rating</div>
+        <div class="c100 p23 small">
+          <span>23%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -36,7 +45,8 @@
             <svg height="30" viewBox="0 0 48 48" width="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#1CC691" transform="translate(2 2)"><circle cx="22" cy="22" r="22"/><path d="m11.3829457 21.6774194 7.3720626 7.3225806 14.0946041-14"/></g></svg>
           </div>
           <div class="message">
-            Your website has been created and your legal documents have been generated...
+            Your website has been created and your legal documents have been generated. Setup your cookie banner and privacy policy
+            button to complete the integration.
           </div>
           <div class="close">
             X
@@ -70,11 +80,15 @@
               <h4>Theme</h4>
               <div class="container flex">
                 <div class="theme-item">
-                  <div class="dark selected"></div>
+                  <div class="dark selected">
+                    <img src="../images/fake_banner_dark.png" alt="">
+                  </div>
                   <span>Dark</span>
                 </div>
                 <div class="theme-item">
-                  <div class="light unselected"></div>
+                  <div class="light unselected">
+                    <img src="../images/fake_banner_light.png" alt="">
+                  </div>
                   <span>Light</span>
                 </div>
                 <div class="theme-item">
@@ -151,17 +165,21 @@
           <h4>Button style</h4>
           <div class="container flex">
             <div class="button-style-item">
-              <div class="dark selected"></div>
-              <span>Dark</span>
+              <div class="light selected">
+                <img src="../images/fake_button_light.png" alt="">
+              </div>
+              <span>Light</span>
             </div>
             <div class="button-style-item">
-              <div class="light unselected"></div>
-              <span>Light</span>
+              <div class="dark unselected">
+                <img src="../images/fake_button_dark.png" alt="">
+              </div>
+              <span>Dark</span>
             </div>
           </div>
 
           <h4>Button position</h4>
-          <div class="container flex">
+          <div class="button-position container flex">
             <label>
               <input type="radio" name="button_position" value="automatic">
               Put automatically button on footer
@@ -177,10 +195,13 @@
     </main>
 
     <footer>
-      <div class="reset">Reset settings</div>
-      <button>Integrate</button>
+        <button class="reset">Reset settings</button>
+        <button class="integrate">Integrate</button>
     </footer>
-
+  </div>
+  <div class="underfooter">
+    <a href="#" class="documentation">Documentation</a>
+    <a href="#" class="contact-support">Contact support</a>
   </div>
 </body>
 
